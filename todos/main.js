@@ -14,8 +14,9 @@ const displayPost = (data) =>{
 
             CardData.classList.add("JSON-Posts");
         CardData.innerHTML=`
-        <h2>${post.id}</h2>
-        <p>${post.body}</p>
+        <h2>${post.userId}</h2>
+        <p>${post.title}</p>
+        <p>${post.completed}</p>
         `;
         ShowPost.appendChild(CardData);
     });

@@ -1,22 +1,22 @@
-function PostData() {
+function AlbumData() {
     fetch('https://jsonplaceholder.typicode.com/albums')
     .then(reponse=>reponse.json())
     .then(post=>displayPost(post))   
 }
 
-PostData();
+AlbumData();
 
-const displayPost = (data) =>{
-    const ShowPost = document.getElementById("album");
+const displayPost = (albums) =>{
+    const ShowAlbum = document.getElementById("album");
 
-    data.forEach((post) => {
-        const CardData = document.createElement("div")
+    albums.forEach((post) => {
+        const CardData = document.createElement("div");
 
-            CardData.classList.add("JSON-Posts");
+            CardData.classList.add("JSON-Albums");
         CardData.innerHTML=`
-        <h2>${post.id}</h2>
-        <p>${post.title}</p>
+        <h3>${post.id}</h3>
+        <h5>${post.title}</h5>
         `;
-        ShowPost.appendChild(CardData);
+        ShowAlbum.appendChild(CardData);
     });
 }

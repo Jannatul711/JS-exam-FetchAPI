@@ -1,9 +1,12 @@
-.JSON-Posts{
-    border: 2px solid greenyellow;
-    margin: 1px;
-   background-color: bisque;
+.JSON-Albums{
+    border: 2px solid rgb(234, 255, 47);
+    padding: 10px;
+    width: 170px;
+    height: 130px;
+    border-radius: 15%;
+    background-color: rgb(238, 175, 99);
 }
 
-.JSON-Posts p{
-    color: blueviolet;
+.JSON-Albums h5{
+    color: rgb(255, 255, 255);
 }
